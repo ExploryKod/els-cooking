@@ -42,7 +42,7 @@ export default function ProjectListItem({ project, user, authors, setEditing, ed
                         </span></>) : null}
             </div>
             <span
-                className="text-xs text-gray-500">Créé par ...., {createdFrom} ({project_publish_status === 'published' ? 'Publié' : 'Brouillon'}). </span>
+                className="text-xs text-gray-500">Créé {createdFrom} ({project_publish_status === 'published' ? 'Publié' : 'Brouillon'}). </span>
             {projectMedias?.length > 0 ?
                 (<div className={"flex flex-row flex-wrap gap-3"}>
                     {projectMedias.filter((projectMedia : any) => projectMedia.projects_id === project.id).map(
