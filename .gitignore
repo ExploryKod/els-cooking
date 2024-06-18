@@ -12,6 +12,9 @@
 # testing
 /coverage
 !public
+!public/img
+/public/uploads/*
+!public/uploads
 # next.js
 /.next/
 /out/

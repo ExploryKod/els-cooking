@@ -10,10 +10,10 @@ export default function Header() {
         <div className="relative grid grid-cols-2 grid-rows-2">
             <Image
                 className={"rounded-lg row-start-1 col-start-1 row-span-2 col-span-2"}
-                src="/img/enginakyurt-cook.jpg"
+                src="/img/pexels-enginakyurt.jpg"
                 width={500}
                 height={500}
-                alt="Picture of the author"
+                alt="Photo d'un plan de travail par Engin Akyurt"
             />
             <ApplicationLogo className={"scale-[0.8] -translate-y-1/2 -translate-x-[60%] " +
                 "border-2 border-white row-start-2 col-start-2 col-end-2 rounded-full p-4 bg-[#004AAD]"}/>
