@@ -7,10 +7,7 @@ import UploadForm from "@/components/utilities/UploadForm";
 import DragAndDropForm from "@/components/utilities/DragAndDropForm";
 import {Demo} from "@/components/tests/Demo";
 import Image from "next/image";
-
-export function ProjectImage({ src, alt }: any) {
-  return <Image src={`/misc/${src}.svg`} alt={alt} width="64" height="64" />
-}
+import {ProjectImage} from "@/components/projects/ProjectsImage";
 
 export default async function ProtectedPage() {
   const supabase = createClient();
@@ -40,7 +37,6 @@ export default async function ProtectedPage() {
           <DragAndDropForm />
           {/*<Demo />*/}
           <ProjectImage src={"els-cooking-logo_1_1719153048833-746526756"} alt={"els image"} />
-
         </main>
       </div>
     </div>
