@@ -2,6 +2,8 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import ToastProvider from "@/components/ToastProvider";
 import Link from "next/link";
+import {ReactQueryClientProvider} from "@/utils/providers/ReactQueryProvider";
+
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "http://localhost:3000";
@@ -18,7 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
+      <ReactQueryClientProvider>
+      <html lang="en" className={GeistSans.className}>
     <body className="bg-background text-foreground">
     <div className="h-screen flex flex-col md:grid md:grid-cols-[240px_1fr]">
 
@@ -54,6 +57,7 @@ export default function RootLayout({
     </div>
     </body>
     </html>
+      </ReactQueryClientProvider>
 );
 }
 

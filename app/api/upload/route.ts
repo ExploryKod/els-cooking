@@ -6,7 +6,7 @@ import fs from "fs";
 
 export const POST = async (req: NextRequest) => {
 
-    if (!fs.existsSync('public')) {
+    if (!fs.existsSync('public/')) {
         return NextResponse.json({
             success: false,
             message: "Il vous manque le dossier public de partage: demander à votre hébergeur de l'ajouter."

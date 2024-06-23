@@ -1,7 +1,5 @@
 'use client'
 import Image from 'next/image'
-
-
 import { createClient } from '@/utils/supabase/client'
 import React, { useEffect, useState } from 'react'
 import ProjectListItem from "@/components/projects/ProjectListItem";
