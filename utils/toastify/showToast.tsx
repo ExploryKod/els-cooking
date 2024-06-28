@@ -1,6 +1,5 @@
 import { toast, ToastContent, ToastOptions, Slide, Id } from "react-toastify";
 
-
 export const defaultToastOptions: ToastOptions = {
     position: "top-center",
     autoClose: 4000,
@@ -12,6 +11,7 @@ export const defaultToastOptions: ToastOptions = {
     theme: "colored",
     transition: Slide,
 };
+
 
 type ToastType = "success" | "error" | "info" | "warning" | "default";
 

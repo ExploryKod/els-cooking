@@ -12,7 +12,6 @@ export default function ProjectListItem({ project, user, authors, setEditing, ed
         return <li className={"text-center text-orange-700"}>Il n'y a pas encore de projets à montrer</li> // or a loading indicator
     }
 
-    console.log(authors);
     const { created_at, project_publish_status } = project
     const createdFrom = dayjs(created_at).fromNow();
     // const projectCreator = user?.name.charAt(0).toUpperCase() + user?.name.slice(1);

@@ -13,7 +13,6 @@ export default function GetProjects({user}: any) {
     const [users, setUsers] = useState<any[] | null>(null)
     const [deleteProjectId, setDeleteProjectId] = useState<number>(0);
     const [editing, setEditing] = useState({on:false, object:{}});
-    console.log('user >>>>', user.id);
     const supabase = createClient()
 
     useEffect(() => {
@@ -51,8 +50,6 @@ export default function GetProjects({user}: any) {
 
     }, [])
 
-    console.log('id --->>>', deleteProjectId)
-    console.log('users from auth --->>>', users)
     const getProjectDeleted = async (projectId: any) => {
         const { error } = await supabase
             .from('projects')
