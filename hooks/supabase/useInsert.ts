@@ -1,6 +1,6 @@
 import {createClient} from "@/utils/supabase/client";
 
-export const useInsertToSupabase = async (props:any) => {
+export const useInsert = async (props:any) => {
     const supabase = createClient()
     const { error } = await supabase.from('sections').insert([
         {

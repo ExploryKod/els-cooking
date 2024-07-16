@@ -1,6 +1,6 @@
 "use server"
 
-import {useInsertToSupabase} from "@/components/hooks/supabase/useInsertToSupabase";
+import {useInsert} from "@/hooks/supabase/useInsert";
 import { z } from 'zod';
 import { revalidatePath } from 'next/cache';
 import {getFormStateError} from "@/utils/forms/getFormStateErrors";
@@ -31,7 +31,7 @@ export const createMessage = async (formData: FormData) => {
     });
 
     try {
-        const { error } = await useInsertToSupabase({
+        const { error } = await useInsert({
             section_text: section_text,
             section_title: section_title,
         })

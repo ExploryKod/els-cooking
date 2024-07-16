@@ -1,7 +1,7 @@
 "use client"
 import { useQuery } from '@tanstack/react-query';
 import { useState } from "react";
-import {useTodos} from "@/components/hooks/todos/useTodos";
+import {useTodos} from "@/hooks/todos/useTodos";
 
 export const Demo = () => {
     const [id, setId] = useState(1)

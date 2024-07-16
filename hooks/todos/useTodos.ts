@@ -1,5 +1,5 @@
 import {useQuery} from "@tanstack/react-query";
-import {useFetchTodos} from "@/components/hooks/todos/useFetchTodos";
+import {useFetchTodos} from "@/hooks/todos/useFetchTodos";
 
 const todoKeys = {
     all: ['todos'] as const,
