@@ -1,6 +1,6 @@
 interface Projects {
-    id: BigInt;
-    user_id?: BigInt;
+    id: BigInt | int;
+    user_id?: BigInt | int;
     project_date?: string;
     project_place?: string;
     project_category?: string | null;

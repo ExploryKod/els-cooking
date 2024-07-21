@@ -9,8 +9,7 @@ export async function GET(req: NextRequest) {
     try {
         //const { data } = await supabase.from('members').select()
         //console.log(data);
-        revalidatePath('/api/projects');
-
+      
         const data: Person[] = [
             {
                 nom: 'Kpeglo Bessou',
@@ -41,7 +40,8 @@ export async function GET(req: NextRequest) {
                 role: 'Coordonnateur de l\'association'
             }
         ];
-
+        
+        revalidatePath('/api/members');
         return NextResponse.json(data);
     } catch(error) {
         console.error(error)
