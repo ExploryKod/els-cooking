@@ -6,7 +6,7 @@ type SectionTexts = {
     section_version: string;
     section_pretitle: string;
     section_title: string,
-    section_text: string;
+    section_text: string | array<string>;
 };
 
 type SectionTextError = {
