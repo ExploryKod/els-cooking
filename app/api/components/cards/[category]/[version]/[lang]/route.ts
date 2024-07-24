@@ -9,11 +9,19 @@ export async function GET(req: NextRequest, { params }: { params: { category:str
 
     const { category, versions, lang } = params
    
-    function getTheCardsText(): CardsContents | CardsTextError {
-        if(cardsContents.find(item => (item.card_category === category))) {
-            const { ...data } = cardsContents.find(item => (item.card_category === category));
+    function getTheCardsText(): CardsContents[] | CardsTextError {
+        
+        const data = cardsContents.filter(c => c.card_category === category)
+        if(data.length > 0) {
             return data;
-        }    
+        }
+
+        // if(cardsContents.find(item => (item.card_category === category))) {
+        //     const { ...data } = cardsContents.find(item => (item.card_category === category));
+        //     return data;
+        // }  
+        
+        
         return {error: true, message: "Le composant card nécessite une version valide et une langue valide"};
     }
 
