@@ -25,6 +25,15 @@ export const sectionsTexts :SectionTexts[] = [
         section_pretitle: "Notre équipe",
         section_title: "Une équipe engagée pour rendre le monde meilleur",
         section_text: "Depuis 2010, nous nous sommes engagées ensemble et avons bâti pierre par pierre cette association. Découvrez le parcours des membres fondateurs."
+    },
+    {
+        id: "4",
+        section_name: "contact",
+        section_lang: "fr",
+        section_version: "1",
+        section_pretitle: "Contactez nous",
+        section_title: "Contactez nous",
+        section_text: "Si vous voulez vous engager avec nous, nous serons très heureux de vous accueillir: contactez-nous par email ou téléphone."
     }
 ]
 
