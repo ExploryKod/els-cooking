@@ -1,5 +1,3 @@
-
-
 export const cardsContents :CardsContents[] = [
     {
         id: "1",
@@ -7,16 +5,16 @@ export const cardsContents :CardsContents[] = [
         card_name: "mission",
         card_lang: "fr",
         card_version: "1",
-        card_pretitle: "Nos projets",
-        card_title: "Découvrez nos projets",
-        card_text: "Nos projets incarnent la force et la diversité de nos convictions. Nous nous engageons avec les populations locales afin d'avancer ensemble. Nous mettons un point d'honneur à la coopération et l'autonomisation.",
+        card_pretitle: "Dignité",
+        card_title: "Dignité",
+        card_text: "Nous respectons chaque personne et groupe que nous aidons. Nous préférons ainsi accompagner plutôt qu'assister au nom de la dignité.",
         card_img: {
-            img_source: "/images/project.jpg",
-            img_alt_text: "Project image"
+            img_source: "/assets/img/icons/5236.jpg",
+            img_alt_text: "Personnes tenant des feuilles"
         },
         card_button_data: {
-            url: "/projects",
-            text: "Voir plus"
+            url: "",
+            text: ""
         }
     },
     {
@@ -25,16 +23,16 @@ export const cardsContents :CardsContents[] = [
         card_name: "mission",
         card_lang: "fr",
         card_version: "1",
-        card_pretitle: "Notre équipe",
-        card_title: "Découvrez nos experts",
-        card_text: "Nous sommes tous des experts dans le domaine de l'agriculture et de la conservation de l'environnement. Nous travaillons ensemble pour améliorer la vie des populations locales.",
+        card_pretitle: "Amour",
+        card_title: "Amour",
+        card_text: "Nos engagements se font grâce à la formidable force que nous donne l'amour.",
         card_img: {
-            img_source: "/images/team.jpg",
-            img_alt_text: "Team image"
+            img_source: "/assets/img/icons/5236.jpg",
+            img_alt_text: "Personnes tenant des feuilles"
         },
         card_button_data: {
-            url: "/team",
-            text: "Voir plus"
+            url: "",
+            text: ""
         }
     },
     {
@@ -43,16 +41,34 @@ export const cardsContents :CardsContents[] = [
         card_name: "mission",
         card_lang: "fr",
         card_version: "1",
-        card_pretitle: "Contactez-nous",
-        card_title: "N'hésitez pas à nous contacter",
-        card_text: "Si vous voulez vous engager avec nous, nous serons très heureux de vous accueillir: contactez-nous par email ou téléphone.",
+        card_pretitle: "Partage",
+        card_title: "Partage",
+        card_text: "Chaque mission est l'occasion de partager des choses ou des mots avec autrui peu importe d'où il vient. Ce partage s'incarne dans l'échange, la rencontre, le don.",
         card_img: {
-            img_source: "/images/contact.jpg",
-            img_alt_text: "Contact image"
+            img_source: "/assets/img/icons/5236.jpg",
+            img_alt_text: "Personnes tenant des feuilles"
         },
         card_button_data: {
-            url: "/contact",
-            text: "Contactez-nous"
+            url: "",
+            text: ""
+        }
+    },
+    {
+        id: "3",
+        card_category: "mission",
+        card_name: "mission",
+        card_lang: "fr",
+        card_version: "1",
+        card_pretitle: "Franchise",
+        card_title: "Franchise",
+        card_text: "Nous valorisons l'authenticité et l'intégrité. Nous mettons un point d'honneur à être transparent avec nos bénévoles, nos donateurs et nos parties prenantes.",
+        card_img: {
+            img_source: "/assets/img/icons/5236.jpg",
+            img_alt_text: "Personnes tenant des feuilles"
+        },
+        card_button_data: {
+            url: "",
+            text: ""
         }
     }
 ]
